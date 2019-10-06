@@ -29,8 +29,8 @@ class App extends React.Component {
        <Navbar />
        <div className="follower">
        <h2 data-testid="soccer-player-header">Soccer Players</h2>
-         {this.state.country.map(follower => (
-           <div key={follower.id}>
+         {this.state.country.map((follower, index) => (
+           <div key={index}>
              <p>{follower.name}</p>
              <p>{follower.country}</p>
            </div>
